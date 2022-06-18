@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Front End Developer",
+    "pic": "assets/images/languagephoto.png",
+    "link": "https://www.google.com"
+  },
+  {
+    "link": "https://www.google.com",
+    "title": "Software Engineer",
+    "pic": "assets/images/literacyphoto.png"
+    },
+  {
+    "title": "User Experience Engineer",
+    "pic": "assets/images/languagephoto.png",
+    "link": "https://www.google.com"
+    },
+  {
+    "title": "Front End Engineer",
+    "pic": "assets/images/literacyphoto.png",
+    "link": "https://www.google.com"
+    }
+ ]
