@@ -135,10 +135,6 @@
 <!-- Divider -->
 <div class="border-bottom border-primary border-1 opacity-1"></div>
 
-
-<!-- =======================
-Inner intro END -->
-
 <!-- =======================
 Main START -->
 <section class="pb-4 pt-3">
@@ -146,9 +142,11 @@ Main START -->
 		<div class="row">
 			<a href="https://www.teacherspayteachers.com/Store/Sarah-C-The-Slp/Category/-11088-Theme-Apples-557483?utm_source=Sarah%20C%20SLP%20Blog&utm_campaign=Blog%20Apples%20Page">
       <div class="col-12">
-        <div class="card bg-dark-overlay-3 h-300 img-fluid overflow-hidden card-bg-scale text-center" style="background-image:url(assets/images/appletheme.png);  width: 100%; background-size: cover;">
+        <div class="card bg-dark-overlay-3 h-300 img-fluid overflow-hidden card-bg-scale text-center" style="background-image:url(assets/images/apples.png);  width: 100%; background-size: cover;">
           <!-- Card Image overlay -->
-
+					<div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+						<div class="col-md-8 m-auto bg-blur p-5 rounded-3 shadow-lg">
+							<h1 class="text-white display-1">Apple-Themed Resources</h1>
         </div>
       </div>
 		</a>
@@ -167,11 +165,8 @@ Main content START -->
 	<div class="container">
 		<div class="row g-4">
 <div id="template-hook"></div>
-	<script src="index.js"></script>
    </div>
  </div>
-
-
 
     </div> <!-- Row end -->
 
@@ -188,9 +183,7 @@ Main content START -->
         <li>
 					<ul class="list-unstyled">
 						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item "><a class="page-link" href="#">2</a></li>
-						<li class="page-item disabled"><a class="page-link" href="#">..</a></li>
-
+							<li class="page-item disabled"><a class="page-link" href="#">..</a></li>
 					</ul>
 				</li>
         <li>
@@ -205,15 +198,6 @@ Main content START -->
 		<!-- Pagination END -->
 	</div>
 </section>
-
-
-
-
-
-
-
-<!-- =======================
-Main END -->
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
@@ -230,26 +214,20 @@ Footer START -->
 			</div>
 			<div class="col-md-6">
 				<p class="text-">Speech-Language Pathologists (SLPs) work to prevent, evaluate, diagnose, and treat speech, language, social communication, cognitive-communication, and swallowing disorders in both children and adults. In addition, SLPs provide training and education to families, caregivers, and other professionals. SLPs work collaboratively with professionals from many other disciplines including Occupational Therapy and Physical Therapy.</p>
-
 			</div>
 			<div class="col-md-3" >
 <img src="assets/images/ASHA-CCC-SLP-Color.jpg" alt="footer logo">
 			</div>
-
 		</div>
 		<!-- About and Newsletter END -->
 </div>
-
 </footer>
 <!-- =======================
 Footer END -->
 
+
 <!-- Back to top -->
 <div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
-
-<!-- =======================
-JS libraries, plugins and custom scripts -->
-
 <!-- Bootstrap JS -->
 <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -272,3 +250,48 @@ JS libraries, plugins and custom scripts -->
 }
 
 </style>
+
+
+<script>
+
+const data = [
+
+  { "title": "Apple Orchard Color Match & Sort Activities", "pic": "assets/images/applecolormatchandsort.png", "link" : "https://www.teacherspayteachers.com/Product/Apple-Orchard-Color-Match-and-Sort-Printable-and-Digital-Activities-7420668?utm_source=Sarah%20C%20SLP%20Blog&utm_campaign=Apple%20Colors"  },
+  { "title": "Book Companion for Bad Apple with Idioms, Vocabulary, and Verb Activities", "pic": "assets/images/badapple.png", "link" : "https://www.teacherspayteachers.com/Product/Book-Companion-for-Bad-Apple-with-Digital-Slides-7403945?utm_source=Sarah%20C%20Blog%20&utm_campaign=BAD%20APPLE"  },
+  { "title": "Apple Orchard Category Sorting Printable & Digital Activities Bundle", "pic": "assets/images/applecategorybundle.png", "link" : "https://www.teacherspayteachers.com/Product/Apple-Orchard-Sorting-Vocabulary-by-Category-Printable-Digital-Bundle-7386159?utm_source=Sarah%20C%20Blog%20&utm_campaign=Apple%20Category%20Bundle"  },
+  { "title": "Apple Orchard Digital Category Sort", "pic": "assets/images/appledigitalcategorysort.png", "link" : "https://www.teacherspayteachers.com/Product/Apple-Orchard-Sorting-Vocabulary-by-Category-Digital-Slide-Activities-7386018?utm_source=Sarah%20C%20Blog%20&utm_campaign=Apple%20Digital%20Category%20"  },
+  { "title": "Apple Orchard Catgeory Sorting Printable Activities", "pic": "assets/images/applecategorysortprint.png", "link" : "https://www.teacherspayteachers.com/Product/Apple-Orchard-Sorting-Vocabulary-by-Category-Printable-Activity-7379463?utm_source=Sarah%20C%20Blog%20&utm_campaign=Apple%20Category%20Print"  },
+  { "title": "Fall Articulation Open Ended Printable Worksheets for Speech Therapy", "pic": "assets/images/fallarticopenworksheet.png", "link" : "https://www.teacherspayteachers.com/Product/Fall-Articulation-Open-Ended-Printable-Worksheets-for-Speech-Therapy-7295443?utm_source=Sarah%20C%20Blog%20&utm_campaign=Apple%20FAll%20Artic"  }
+
+];
+
+
+const cards = data;
+//hook to body of HTML
+const container = document.querySelector('#template-hook');
+  // Loop through all elements of the list
+ let cardList = cards.forEach(function(el) {
+    // Build HTML code
+  let list = document.createElement('div');
+//create template literal card
+    list.innerHTML =
+   ` <div class="col-sm-6 col-lg-4 arrayz">
+     <div class="card card-overlay-bottom card-image-scale">
+       <!-- Card Image -->
+       <img src=${el.pic} alt=${el.title}>
+       <!-- Card Image overlay -->
+       <div class="card-img-overlay d-flex flex-column p-3 p-md-4">
+           <div class="w-100 mt-auto">
+           <!-- Card title -->
+           <h4 class="text-white"><a href=${el.link} class="btn-link text-reset stretched-link">${el.title}</a></h4>
+           <!-- Card info -->
+			</div>
+			</div>
+			</div>
+			</div>  `;
+    // Insert HTML into page
+    container.append(list);
+});
+
+
+</script>
