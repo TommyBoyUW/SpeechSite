@@ -195,9 +195,21 @@
 
 <div class="col-12 justify-content-center" id="social">
 
- <div class="embedsocial-hashtag" data-ref="ec900ca8eb38986ccd939bbaac4d5c563e95da38"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+  <!-- Place <div> tag where you want the feed to appear -->
+ <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+ <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+ <script type="text/javascript">
+ /* curator-feed-default-feed-layout */
+ (function(){
+ var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+ i.src="https://cdn.curator.io/published/ba6088e6-5544-4396-8494-e067e073157f.js";
+ e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+ })();
+ </script>
 
 </div>
+
 
 <!-- =======================
 Main hero START -->
